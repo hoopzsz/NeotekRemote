@@ -27,38 +27,6 @@ struct MuteButton: View {
         }
     }
 }
-//
-//struct NeotekStyle: ButtonStyle {
-//    func makeBody(configuration: ButtonStyleConfiguration) -> some View {
-//        Circle()
-//            .fill(Color.green)
-//            .overlay(
-//                Circle()
-//                    .stroke(lineWidth: 2)
-//                    .foregroundColor(.white)
-//                    .padding(4)
-//            )
-//            .overlay(
-//                configuration.label
-//                    .foregroundColor(.white)
-//            )
-//            .frame(width: 75, height: 75)
-//    }
-//}
-
-struct NeotekButton: View {
-    let channel: Int
-    @Binding var isMuted: Bool
-    
-    var body: some View {
-        Button(buttonStyle(NeotekStyle))
-    }
-}
-
-struct SimplerView: View {
-    
-    let neotek = Neotek()
-}
 
 struct ContentView: View {
     
