@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3111266263E44D80093AB71 /* WebMIDIKit in Frameworks */ = {isa = PBXBuildFile; productRef = A3111265263E44D80093AB71 /* WebMIDIKit */; };
+		A3111269263E52DF0093AB71 /* Neotek.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3111268263E52DF0093AB71 /* Neotek.swift */; };
 		A32E6AB1263DE485004F89D8 /* Neotek_RemoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E6AB0263DE485004F89D8 /* Neotek_RemoteApp.swift */; };
 		A32E6AB3263DE485004F89D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E6AB2263DE485004F89D8 /* ContentView.swift */; };
 		A32E6AB5263DE486004F89D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32E6AB4263DE486004F89D8 /* Assets.xcassets */; };
@@ -14,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A3111268263E52DF0093AB71 /* Neotek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neotek.swift; sourceTree = "<group>"; };
 		A32E6AAD263DE485004F89D8 /* Neotek Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neotek Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32E6AB0263DE485004F89D8 /* Neotek_RemoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neotek_RemoteApp.swift; sourceTree = "<group>"; };
 		A32E6AB2263DE485004F89D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3111266263E44D80093AB71 /* WebMIDIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +58,7 @@
 			children = (
 				A32E6AB0263DE485004F89D8 /* Neotek_RemoteApp.swift */,
 				A32E6AB2263DE485004F89D8 /* ContentView.swift */,
+				A3111268263E52DF0093AB71 /* Neotek.swift */,
 				A32E6AB4263DE486004F89D8 /* Assets.xcassets */,
 				A32E6AB9263DE486004F89D8 /* Info.plist */,
 				A32E6AB6263DE486004F89D8 /* Preview Content */,
@@ -85,6 +90,9 @@
 			dependencies = (
 			);
 			name = "Neotek Remote";
+			packageProductDependencies = (
+				A3111265263E44D80093AB71 /* WebMIDIKit */,
+			);
 			productName = "Neotek Remote";
 			productReference = A32E6AAD263DE485004F89D8 /* Neotek Remote.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +120,9 @@
 				Base,
 			);
 			mainGroup = A32E6AA4263DE485004F89D8;
+			packageReferences = (
+				A3111264263E44D80093AB71 /* XCRemoteSwiftPackageReference "WebMIDIKit" */,
+			);
 			productRefGroup = A32E6AAE263DE485004F89D8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +151,7 @@
 			files = (
 				A32E6AB3263DE485004F89D8 /* ContentView.swift in Sources */,
 				A32E6AB1263DE485004F89D8 /* Neotek_RemoteApp.swift in Sources */,
+				A3111269263E52DF0093AB71 /* Neotek.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +281,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Neotek Remote/Preview Content\"";
+				DEVELOPMENT_TEAM = T5C544MQ9Y;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Neotek Remote/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -290,6 +303,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Neotek Remote/Preview Content\"";
+				DEVELOPMENT_TEAM = T5C544MQ9Y;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Neotek Remote/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -326,6 +340,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A3111264263E44D80093AB71 /* XCRemoteSwiftPackageReference "WebMIDIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Reiszecke/WebMIDIKit";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A3111265263E44D80093AB71 /* WebMIDIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3111264263E44D80093AB71 /* XCRemoteSwiftPackageReference "WebMIDIKit" */;
+			productName = WebMIDIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A32E6AA5263DE485004F89D8 /* Project object */;
 }

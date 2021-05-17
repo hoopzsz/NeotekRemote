@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "WebMIDIKit",
+        "repositoryURL": "https://github.com/Reiszecke/WebMIDIKit",
+        "state": {
+          "branch": null,
+          "revision": "22aeb418af40372eab7ddb342ac5fedc99659b74",
+          "version": "1.0.7"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
